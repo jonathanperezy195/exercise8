@@ -4,7 +4,7 @@ $(function(){
 	$("#addbtn").on('click', function(){
 		var number = parseInt($('input[name="number_imgs"]').val());
 		if(number == 0 | number > 15){
-			alert('Maximun of 15 imgs exeded');
+			alert('Número de imagenes debe estar comprendido entre 1 y 15!');
 			return false;
 		}
 		getImg(number);
