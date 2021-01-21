@@ -3,7 +3,7 @@ $(function(){
 
 	$("#addbtn").on('click', function(){
 		var number = parseInt($('input[name="number_imgs"]').val());
-		if(number == 0 | number > 15){
+		if(number < 0 | number == 0 | number > 15){
 			alert('Número de imagenes debe estar comprendido entre 1 y 15!');
 			return false;
 		}
